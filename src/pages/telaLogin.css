@@ -1,0 +1,227 @@
+.conteiner{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+:root{
+    --mainColor:#29335C;
+    --mainColorLight: #425394;
+    --secondaryColor: #DB2B39;
+    --textColor: #eeeeee;
+  }
+
+.conteinerLogin{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    background-color: #FFF;
+}
+.login{
+    width: 390px;
+    background-color: rgb(25,25,112);
+    border-radius: 10px;
+
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.hoome{
+    background-color: #16128f;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 100%;
+}
+.loginForm{
+    width: 100%;
+}
+
+.tituloLogin{
+    display: block;
+    font-size: 30px;
+    color: #16128f;
+    line-height: 1.2;
+    text-align: center;
+}
+.tituloLogin img{
+width: 90px;
+
+}
+.input{
+width: 100%;
+position: relative;
+border-bottom: 2px solid #adadad;
+margin-bottom: 37px;
+
+}
+.diginput{
+    font-size: 15px;
+    color: #2b52c7;
+    line-height: 1.2;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+
+    background-color: transparent;
+    padding: 0 5px;
+}
+.foco-input{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    top:0;
+    left: 0;
+
+    pointer-events: none;
+    color: #adadad;
+
+}
+.foco-input::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    background: -webkit-linear-gradient(to left, #2137fd,#ff4221);
+    background: -o-linear-gradient(to left, #2137fd,#ff4221);
+    background: -moz-linear-gradient(to left, #2137fd,#ff4221);
+    background: linear-gradient(to left, #2137fd,#ff4221);
+}
+.foco-input::after{
+    font-size: 15px;
+    color: #16128f;
+    line-height: 1.2;
+    content: attr(data-placeholder);
+
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.diginput:focus {
+    outline: 0;
+}
+
+.diginput:focus + .foco-input::after{
+    top: -15px
+}
+
+.diginput:focus + .foco-input::before{
+    width: 100%;
+}
+
+.has-val + .foco-input::after{
+    top: -15px;
+}
+.has-val + .foco-input::before{
+   width: 100%;
+}
+
+.conteinerLoginBotao{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-bottom: 13px;
+
+}
+.loginBotao{
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: -webkit-linear-gradient(to left, #2137fd,#ff4221);
+    background: -o-linear-gradient(to left, #2137fd,#ff4221);
+    background: -moz-linear-gradient(to left, #2137fd,#ff4221);
+    background: linear-gradient(to left, #2137fd,#ff4221);
+}
+
+.loginBotao:hover{
+    cursor: pointer;
+}
+
+.textoCentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.texto{
+    font-size: 14px;
+    color: #adadad;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.texto2{
+    font-size: 14px;
+    color: #6a7dfe;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.texto3{
+    font-size: 26px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6a7dfe;
+    text-decoration: none;
+
+}
+
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.usuario button{
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+.usuario button:hover{
+    background-color: var(--mainColorLight);
+    cursor: pointer;
+}

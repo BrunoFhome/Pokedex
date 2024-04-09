@@ -1,0 +1,77 @@
+.cartapokemon{
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0,0,0, 0.25);
+    border-radius: 3px;
+    background-color: blue;
+    border: 2px solid black;
+}
+.pokeimg{
+    margin-right: 10px;
+    padding: 0px 5px;
+}
+.corpocarta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 10px 5px;
+    flex: 1;
+    cursor: pointer;
+}
+.topodacarta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.topodacarta h3{
+    text-transform: capitalize;
+}
+.rodapedacarta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pokemontipo{
+    display: flex;
+    
+}
+.pokemontextotipo{
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+.pokemon-fav{
+    border: none;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 60%;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px rgba(0,0,0, 0.25);
+    border-radius: 10px;
+    
+}
+.popup-inner .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}

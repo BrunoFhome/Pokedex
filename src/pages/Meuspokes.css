@@ -1,0 +1,90 @@
+.meus-pokemons-container {
+    margin: 0px;
+  }
+  
+  .usuario {
+    margin-bottom: 20px;
+  }
+  
+  .usuario-btn {
+    margin-top: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--textColor);
+    border-radius: 10px;
+    background-color: var(--mainColor);
+  }
+  
+  .pokemons-list input {
+    margin-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 10px;
+    
+  }
+  
+  .pokemons-list button{
+      margin-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 10px;
+      padding: 15px;
+      font-size: 20px;
+      background-color: var(--mainColor);
+      color: var(--textColor);
+      border-radius: 10px;
+      
+  }
+  .usuario-btn :hover{
+    background-color: var(--mainColorLight);
+      cursor: pointer;
+  }
+  .pokemons-list button:hover{
+      background-color: var(--mainColorLight);
+      cursor: pointer;
+  }
+  
+  .pokemons-list ul {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .pokemons-list li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .usuario button{
+      border-radius: 10px;
+  }
+  .texto3{
+    font-size: 26px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6a7dfe;
+    text-decoration: none;
+
+}
